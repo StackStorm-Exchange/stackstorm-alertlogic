@@ -3,6 +3,6 @@ name: alertlogic
 description: AlertLogic ActiveIntegration APIs 
 keywords:
   - AlertLogic
-version: 0.1.0
+version: 0.2.0
 author: Jon Middleton
 email: jon.middleton@pulsant.com
