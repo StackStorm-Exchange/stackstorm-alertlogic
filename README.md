@@ -1,4 +1,4 @@
-# Alert `Logic ActiveIntegration Pack
+# Alert Logic ActiveIntegration Pack
 
 This integration pack allows you to integrate with 
 [Alert Logic](https://www.alertlogic.com/).
