@@ -1,12 +1,21 @@
-# AlertLogic ActiveIntegration Pack
+# Alert `Logic ActiveIntegration Pack
 
-This intergration pack allows you to intergrate with 
-[AlertLogic](https://www.alertlogic.com/).
+This integration pack allows you to integrate with 
+[Alert Logic](https://www.alertlogic.com/).
 
 ## Config
 
-You need to request an API key from AlertLogic for your account and
-update the packs config (`config.yaml`).
+Request an API key from Alert Logic for your account. 
+Copy the example configuration in [alertlogic.yaml.example](./alertlogic.yaml.example)
+to `/opt/stackstorm/configs/alertlogic.yaml` and edit as required.
+
+It should contain:
+
+* ``apikey`` - Alert Logic API Key
+
+You can also use dynamic values from the datastore. See the
+[docs](https://docs.stackstorm.com/reference/pack_configs.html) for more info.
+
 
 ## Actions
 
