@@ -38,12 +38,12 @@ def GetScanExecutions(config, scan_id):
                          headers=headers,
                          auth=(config['api_key'], ''))
         r.raise_for_status()
-    except:
+    except requests.exceptions.RequestException:
         raise ValueError("HTTP error: %s on %s" % (r.status_code, r.url))
 
     try:
         data = r.json()
-    except:
+    except ValueError:
         raise ValueError("Invalid JSON")
     else:
         results = {'latest_complete': None, 'scans': []}

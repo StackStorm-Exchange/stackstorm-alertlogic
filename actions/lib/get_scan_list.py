@@ -43,12 +43,12 @@ def GetScanList(config, customer_id=None, active_only=False):
                          auth=(config['api_key'], ''),
                          params=payload)
         r.raise_for_status()
-    except:
+    except requests.exceptions.RequestException:
         raise ValueError("HTTP error: %s on %s" % (r.status_code, r.url))
 
     try:
         data = r.json()
-    except:
+    except ValueError:
         raise ValueError("Invalid JSON")
     else:
         for item in data:

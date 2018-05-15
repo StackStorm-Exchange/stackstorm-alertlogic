@@ -1,8 +1,8 @@
 # Changelog
 
-## In development
+## 0.2.2
 
-* n/a
+* Minor linting
 
 ## 0.2
 
