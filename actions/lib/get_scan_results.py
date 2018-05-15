@@ -51,7 +51,7 @@ def GetScanResults(config, scan_exec_id, new_vulns=False, new_ports=False):
                          auth=(config['api_key'], ''),
                          params=payload)
         r.raise_for_status()
-    except requests.exceptions.RequestException as e:
+    except requests.exceptions.RequestException:
         raise ValueError("HTTP error: %s" % r.status_code)
 
     try:
