@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.3
+
+* Bump version to fix tagging issues. No code changes
+
 ## 0.2.2
 
 * Minor linting
